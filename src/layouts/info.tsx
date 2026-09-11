@@ -29,7 +29,7 @@ const Info: React.FC<{}> = () => (
             HP bar covering the chat box.
         </p>
 
-        <h4 style={{ fontFamily: "sans-serif" }}>Orginal forum post</h4>
+        <h4 style={{ fontFamily: "sans-serif" }}>Original forum post</h4>
 
         <p style={{ fontFamily: "sans-serif" }}>
             <a href="https://runeapps.org/forums/viewtopic.php?pid=4425#p4425">
@@ -40,16 +40,16 @@ const Info: React.FC<{}> = () => (
         <h4 style={{ fontFamily: "sans-serif" }}>Add app link</h4>
 
         <p style={{ fontFamily: "sans-serif" }}>
-            <a href="alt1://addapp/https://jhaego.github.io/Better-AoD-2024/public/appconfig.json">
-            alt1://addapp/https://jhaego.github.io/Better-AoD-2024/public/appconfig.json
+            <a href="alt1://addapp/https://cuddlyzebra.github.io/Better-AoD-2026/public/appconfig.json">
+            alt1://addapp/https://cuddlyzebra.github.io/Better-AoD-2026/public/appconfig.json
             </a>
         </p>
 
         <h4 style={{ fontFamily: "sans-serif" }}>Source code</h4>
 
         <p style={{ fontFamily: "sans-serif" }}>
-            <a href="https://github.com/Jhaego/Better-AoD-2024">
-            https://github.com/Jhaego/Better-AoD-2024
+            <a href="https://github.com/cuddlyzebra/Better-AoD-2026">
+            https://github.com/cuddlyzebra/Better-AoD-2026
             </a>
         </p>
     </React.Fragment>

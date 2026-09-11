@@ -33957,13 +33957,7 @@ const detectPlayerDeath = (text) => {
     return !!match;
 };
 const detectKillStart = (text) => {
-    const translations = [
-        `Welcome to your session against: Nex - Angel of Death`,
-        `Willkommen zu deiner Runde gegen: Nex - Engel des Todes`,
-        `Bienvenue dans votre session de combat contre : Nex : l'ange de la mort`
-    ];
-    const mainExpression = translations.map(regexAdjustments).join("|");
-    const match = text.match(new RegExp(`(${mainExpression})`, "i"));
+    const match = text.match(/(Welcome to your session against: Nex[,-] Angel of Death|Willkommen zu deiner Runde gegen: Nex - Engel des Todes|Bienvenue dans votre session de combat contre : Nex : l'ange de la mort)/i);
     return !!match;
 };
 const detectMinionDeath = (text) => {

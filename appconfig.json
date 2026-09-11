@@ -1,0 +1,16 @@
+{
+    "appName": "Better AoD 2024",
+    "description": "Improved AoD assistance",
+    "appUrl": "./",
+    "configUrl": "./appconfig.json",
+    "iconUrl": "icon.png",
+    "defaultWidth": 200,
+    "defaultHeight": 140,
+    "minWidth": 120,
+    "minHeight": 50,
+    "maxWidth": 500,
+    "maxHeight": 500,
+    "requestHandlers": [],
+    "activators": [],
+    "permissions": "overlay,pixel,gamestate"
+}

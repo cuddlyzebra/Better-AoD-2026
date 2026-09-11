@@ -33660,15 +33660,15 @@ const Info = () => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement((
     react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { style: { fontFamily: "sans-serif" } }, "This app requires you to have gamechat in either the \"on\" or \"filtered\" settings and the chatbox to be scrolled completely to the bottom. The app also reads each line separately so issues may occur if your chat box is so small that certain messages that are scanned for split on multiple lines. Please ensure your font size is 12 or larger (14 is best) as font 10 has significant detection issues."),
     react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", { style: { fontFamily: "sans-serif" } }, "Double reading things?"),
     react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { style: { fontFamily: "sans-serif" } }, "This can happen for several reasons around messages in the chatbox being obscured. This can be caused by: scrolling up, changing chat window, loading screens (when you teleport to Nex bank) or the floating monster HP bar covering the chat box."),
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", { style: { fontFamily: "sans-serif" } }, "Orginal forum post"),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", { style: { fontFamily: "sans-serif" } }, "Original forum post"),
     react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { style: { fontFamily: "sans-serif" } },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", { href: "https://runeapps.org/forums/viewtopic.php?pid=4425#p4425" }, "https://runeapps.org/forums/viewtopic.php?pid=4425#p4425")),
     react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", { style: { fontFamily: "sans-serif" } }, "Add app link"),
     react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { style: { fontFamily: "sans-serif" } },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", { href: "alt1://addapp/https://jhaego.github.io/Better-AoD-2024/public/appconfig.json" }, "alt1://addapp/https://jhaego.github.io/Better-AoD-2024/public/appconfig.json")),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", { href: "alt1://addapp/https://cuddlyzebra.github.io/Better-AoD-2026/public/appconfig.json" }, "alt1://addapp/https://cuddlyzebra.github.io/Better-AoD-2026/public/appconfig.json")),
     react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", { style: { fontFamily: "sans-serif" } }, "Source code"),
     react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { style: { fontFamily: "sans-serif" } },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", { href: "https://github.com/Jhaego/Better-AoD-2024" }, "https://github.com/Jhaego/Better-AoD-2024"))));
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", { href: "https://github.com/cuddlyzebra/Better-AoD-2026" }, "https://github.com/cuddlyzebra/Better-AoD-2026"))));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Info);
 
 

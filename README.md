@@ -2,7 +2,7 @@
 
 This is a fork of [Better AoD 2024](https://github.com/Jhaego/Better-AoD-2024) by Jhaego, which was itself a fork of the [original Better AoD](https://runeapps.org/forums/viewtopic.php?id=1324) Alt1 plugin by JamieS1211.
 
-The 2024 version was left unsupported as of November 2025, with the author noting he could no longer confirm it still worked. As of September 2026 it had indeed stopped detecting chat correctly, so this fork exists to get it working again for myself and friends. No mechanics-tracking features were changed — this is purely a maintenance fork to restore functionality.
+The 2024 version was left unsupported as of November 2025, with the author noting he could no longer confirm it still worked. As of September 2026 it had indeed stopped detecting chat correctly, so this fork exists to get it working again. No mechanics-tracking features were changed — this is purely a maintenance fork to restore functionality.
 
 # Better AoD 2026
 

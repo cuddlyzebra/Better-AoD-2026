@@ -1,19 +1,17 @@
-# Disclaimer 22-11-2025: unsupported
+# Update 12-09-2026: forked and fixed
 
-I assume my version no longer works (I am unable to ascertain this as I do not currently play the game). 
+This is a fork of [Better AoD 2024](https://github.com/Jhaego/Better-AoD-2024) by Jhaego, which was itself a fork of the [original Better AoD](https://runeapps.org/forums/viewtopic.php?id=1324) Alt1 plugin by JamieS1211.
 
-If these files are somehow useful to anyone, feel free to use them as you like :-)
+The 2024 version was left unsupported as of November 2025, with the author noting he could no longer confirm it still worked. As of September 2026 it had indeed stopped detecting chat correctly, so this fork exists to get it working again for myself and friends. No mechanics-tracking features were changed — this is purely a maintenance fork to restore functionality.
 
-# Better AoD 2024
+# Better AoD 2026
 
-This is me playing around with the [original Better AoD](https://runeapps.org/forums/viewtopic.php?id=1324) Alt1 plugin by JamieS1211. 
-
-Compared to the original, this version *should* properly track number of kills and average kill time.
+Compared to the original, this version *should* properly track number of kills and average kill time, and now correctly detects and reads the in-game chatbox again.
 
 ## Installation
 
 To install this plugin copy & paste this link into your browser:
-`alt1://addapp/https://jhaego.github.io/Better-AoD-2024/public/appconfig.json`
+`alt1://addapp/https://cuddlyzebra.github.io/Better-AoD-2026/public/appconfig.json`
 
 If you do not already have Alt1 Toolkit installed you can [download it from runeapps.org](https://runeapps.org/alt1).
 

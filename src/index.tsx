@@ -48,18 +48,20 @@ const createNewReader = () => {
     const reader = new ChatBoxReader()
 
     reader.readargs = {
-        colors: [
-            mixColor(127, 169, 255), // Timestamp blue
-            mixColor(45, 186, 20), // Completion time green
-            mixColor(155, 48, 255), // "Nex:" purple
-            mixColor(153, 255, 153), // "Nex:" green
-            mixColor(235, 47, 47), // "Nex has marked you ..."
-            mixColor(208, 34, 34), // Pool detonation message
-            mixColor(255, 0, 255), // Umbra purple
-            mixColor(0, 255, 255), // Glacies blue
-            mixColor(255, 0, 0), // Cruor red
-            mixColor(255, 255, 255) // Fumus white
-        ]
+colors: [
+    mixColor(127, 169, 255), // Timestamp blue
+    mixColor(45, 186, 20), // Completion time green
+    mixColor(155, 48, 255), // "Nex:" purple
+    mixColor(153, 255, 153), // "Nex:" green
+    mixColor(235, 47, 47), // "Nex has marked you ..."
+    mixColor(220, 40, 40), // Pool detonation message (variant 1)
+    mixColor(208, 34, 34), // Pool detonation message (variant 2)
+    mixColor(195, 28, 28), // Pool detonation message (variant 3)
+    mixColor(255, 0, 255), // Umbra purple
+    mixColor(0, 255, 255), // Glacies blue
+    mixColor(255, 0, 0), // Cruor red
+    mixColor(255, 255, 255) // Fumus white
+]
     }
 
     return reader

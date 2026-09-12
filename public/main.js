@@ -42214,7 +42214,9 @@ const createNewReader = () => {
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(155, 48, 255), // "Nex:" purple
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(153, 255, 153), // "Nex:" green
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(235, 47, 47), // "Nex has marked you ..."
-            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(208, 34, 34), // Pool detonation message
+            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(220, 40, 40), // Pool detonation message (variant 1)
+            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(208, 34, 34), // Pool detonation message (variant 2)
+            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(195, 28, 28), // Pool detonation message (variant 3)
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(255, 0, 255), // Umbra purple
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(0, 255, 255), // Glacies blue
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(255, 0, 0), // Cruor red

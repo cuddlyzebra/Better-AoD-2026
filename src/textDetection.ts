@@ -121,7 +121,8 @@ export const detectPool = (text: string) => {
     const translations = [
         `Nex casts thick black smoke towards the centre of the arena`,
         `Nex leitet dichten, schwarzen Rauch zur Mitte der Arena`,
-        `Nex lance une epaisse fumee noire vers le centre de l'arene`
+        `Nex lance une epaisse fumee noire vers le centre de l'arene`,
+        `Even I can not control the element of smoke`
     ]
 
     const mainExpression = translations.map(regexAdjustments).join("|")

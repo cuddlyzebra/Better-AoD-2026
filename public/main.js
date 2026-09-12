@@ -33917,6 +33917,25 @@ const regexAdjustments = (rawRegexString) => {
     });
     return rawRegexString;
 };
+const detectPlayerDeath = (text) => {
+    const translations = [`Oh dear, you are dead!`, `Oje, du bist tot!`, `Oh fichtre, vous etes mort !`];
+    const mainExpression = translations.map(regexAdjustments).join("|");
+    const match = text.match(new RegExp(`(${mainExpression})`, "i"));
+    return !!match;
+};
+const detectKillStart = (text) => {
+    const match = text.match(/(Welcome to your session against: Nex[,-] Angel of Death|Willkommen zu deiner Runde gegen: Nex - Engel des Todes|Bienvenue dans votre session de combat contre : Nex : l'ange de la mort)/i);
+    return !!match;
+};
+const detectMinionDeath = (text) => {
+    const translations = [`master`, `meister`, `ma`];
+    const mainExpression = translations.map(regexAdjustments).join("|");
+    const match = text.match(new RegExp(`(umb|glac|cru|fum).*(${mainExpression})`, "i"));
+    if (match) {
+        const minion = match[0].substring(0, 1);
+        return (0,_helpers__WEBPACK_IMPORTED_MODULE_0__.getMinionFromInitial)(minion);
+    }
+};
 const detectGemStart = (text) => {
     const translations = [
         `The challenge gem competition has begun!`,
@@ -33950,27 +33969,8 @@ const detectKillEnd = (text) => {
     }
     return false;
 };
-const detectPlayerDeath = (text) => {
-    const translations = [`Oh dear, you are dead!`, `Oje, du bist tot!`, `Oh fichtre, vous etes mort !`];
-    const mainExpression = translations.map(regexAdjustments).join("|");
-    const match = text.match(new RegExp(`(${mainExpression})`, "i"));
-    return !!match;
-};
-const detectKillStart = (text) => {
-    const match = text.match(/(Welcome to your session against: Nex[,-] Angel of Death|Willkommen zu deiner Runde gegen: Nex - Engel des Todes|Bienvenue dans votre session de combat contre : Nex : l'ange de la mort)/i);
-    return !!match;
-};
-const detectMinionDeath = (text) => {
-    const translations = [`master`, `meister`, `ma`];
-    const mainExpression = translations.map(regexAdjustments).join("|");
-    const match = text.match(new RegExp(`(umb|glac|cru|fum).*(${mainExpression})`, "i"));
-    if (match) {
-        const minion = match[0].substring(0, 1);
-        return (0,_helpers__WEBPACK_IMPORTED_MODULE_0__.getMinionFromInitial)(minion);
-    }
-};
 const detectDirectionalSmoke = (text) => {
-    const match = text.match(new RegExp(`(Nex begins to draw smoke from the (north|east) towards you)|(Nex zieht Rauch aus dem (Norden|Osten) zu dir hin)|(Nex vous envoie de la fumee venant de l'(est) !)|(Nex se met)`, "i"));
+    const match = text.match(new RegExp(`(Nex begins( to)? draw smoke from the (north|east) towards you)|(Nex zieht Rauch aus dem (Norden|Osten) zu dir hin)|(Nex vous envoie de la fumee venant de l'(est) !)|(Nex se met)`, "i"));
     if (match) {
         if (text.includes("north") || text.includes("Norden") || text.includes("Nex se met")) {
             return "North";
@@ -42328,6 +42328,7 @@ function App() {
                         });
                     }
                     // Start of kill
+                    console.log('KILL START CHECK:', JSON.stringify(line.text));
                     if ((0,_textDetection__WEBPACK_IMPORTED_MODULE_3__.detectKillStart)(line.text)) {
                         dispatch({ type: "clear" });
                         if (settings.newKillMessage.text) {

@@ -211,6 +211,7 @@ function App() {
                     }
 
                     // Start of kill
+                    console.log('KILL START CHECK:', JSON.stringify(line.text))
                     if (detectKillStart(line.text)) {
                         dispatch({ type: "clear" })
 

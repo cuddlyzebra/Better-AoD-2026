@@ -21,6 +21,38 @@ const regexAdjustments = (rawRegexString: string) => {
     return rawRegexString
 }
 
+export const detectPlayerDeath = (text: string) => {
+    const translations = [`Oh dear, you are dead!`, `Oje, du bist tot!`, `Oh fichtre, vous etes mort !`]
+
+    const mainExpression = translations.map(regexAdjustments).join("|")
+
+    const match = text.match(new RegExp(`(${mainExpression})`, "i"))
+
+    return !!match
+}
+
+export const detectKillStart = (text: string) => {
+    const match = text.match(
+        /(Welcome to your session against: Nex[,-] Angel of Death|Willkommen zu deiner Runde gegen: Nex - Engel des Todes|Bienvenue dans votre session de combat contre : Nex : l'ange de la mort)/i
+    )
+
+    return !!match
+}
+
+export const detectMinionDeath = (text: string) => {
+    const translations = [`master`, `meister`, `ma`]
+
+    const mainExpression = translations.map(regexAdjustments).join("|")
+
+    const match = text.match(new RegExp(`(umb|glac|cru|fum).*(${mainExpression})`, "i"))
+
+    if (match) {
+        const minion = match[0].substring(0, 1)
+
+        return getMinionFromInitial(minion)
+    }
+}
+
 export const detectGemStart = (text: string) => {
     const translations = [
         `The challenge gem competition has begun!`,
@@ -68,42 +100,10 @@ export const detectKillEnd = (text: string) => {
     return false
 }
 
-export const detectPlayerDeath = (text: string) => {
-    const translations = [`Oh dear, you are dead!`, `Oje, du bist tot!`, `Oh fichtre, vous etes mort !`]
-
-    const mainExpression = translations.map(regexAdjustments).join("|")
-
-    const match = text.match(new RegExp(`(${mainExpression})`, "i"))
-
-    return !!match
-}
-
-export const detectKillStart = (text: string) => {
-    const match = text.match(
-        /(Welcome to your session against: Nex[,-] Angel of Death|Willkommen zu deiner Runde gegen: Nex - Engel des Todes|Bienvenue dans votre session de combat contre : Nex : l'ange de la mort)/i
-    )
-
-    return !!match
-}
-
-export const detectMinionDeath = (text: string) => {
-    const translations = [`master`, `meister`, `ma`]
-
-    const mainExpression = translations.map(regexAdjustments).join("|")
-
-    const match = text.match(new RegExp(`(umb|glac|cru|fum).*(${mainExpression})`, "i"))
-
-    if (match) {
-        const minion = match[0].substring(0, 1)
-
-        return getMinionFromInitial(minion)
-    }
-}
-
 export const detectDirectionalSmoke = (text: string) => {
     const match = text.match(
         new RegExp(
-            `(Nex begins to draw smoke from the (north|east) towards you)|(Nex zieht Rauch aus dem (Norden|Osten) zu dir hin)|(Nex vous envoie de la fumee venant de l'(est) !)|(Nex se met)`,
+            `(Nex begins( to)? draw smoke from the (north|east) towards you)|(Nex zieht Rauch aus dem (Norden|Osten) zu dir hin)|(Nex vous envoie de la fumee venant de l'(est) !)|(Nex se met)`,
             "i"
         )
     )

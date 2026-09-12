@@ -54,8 +54,9 @@ const createNewReader = () => {
             mixColor(155, 48, 255), // "Nex:" purple
             mixColor(153, 255, 153), // "Nex:" green
             mixColor(235, 47, 47), // "Nex has marked you ..."
-            mixColor(255, 0, 255), // Umbra purple 
-            mixColor(0, 255, 255), // Glacies blue 
+            mixColor(208, 34, 34), // Pool detonation message
+            mixColor(255, 0, 255), // Umbra purple
+            mixColor(0, 255, 255), // Glacies blue
             mixColor(255, 0, 0), // Cruor red
             mixColor(255, 255, 255) // Fumus white
         ]

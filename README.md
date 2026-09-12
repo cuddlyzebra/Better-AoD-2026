@@ -6,7 +6,7 @@ The 2024 version was left unsupported as of November 2025, with the author notin
 
 # Better AoD 2026
 
-Compared to the original, this version *should* properly track number of kills and average kill time, and now correctly detects and reads the in-game chatbox again.
+Compared to the original, this version *should* properly track number of kills and average kill time, and now correctly detects and reads the in-game chatbox again as well as when the player re-enters the instance for a new kill.
 
 ## Installation
 

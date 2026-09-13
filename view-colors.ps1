@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File view-colors.ps1

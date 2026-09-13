@@ -54,15 +54,11 @@ const createNewReader = () => {
             mixColor(155, 48, 255), // "Nex:" purple
             mixColor(153, 255, 153), // "Nex:" green
             mixColor(235, 47, 47), // "Nex has marked you ..."
-            mixColor(255, 60, 60), // Pool - wide net 1
-            mixColor(230, 30, 30), // Pool - wide net 2
-            mixColor(200, 20, 20), // Pool - wide net 3
-            mixColor(170, 10, 10), // Pool - wide net 4
-            mixColor(150, 50, 50), // Pool - wide net 5
             mixColor(255, 0, 255), // Umbra purple
             mixColor(0, 255, 255), // Glacies blue
             mixColor(255, 0, 0), // Cruor red
-            mixColor(255, 255, 255) // Fumus white
+            mixColor(255, 255, 255), // Fumus white
+            ...defaultcolors.map(([r, g, b]) => mixColor(r, g, b)) // Library defaults for broader coverage
         ]
     }
 

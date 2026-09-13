@@ -42215,15 +42215,11 @@ const createNewReader = () => {
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(155, 48, 255), // "Nex:" purple
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(153, 255, 153), // "Nex:" green
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(235, 47, 47), // "Nex has marked you ..."
-            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(255, 60, 60), // Pool - wide net 1
-            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(230, 30, 30), // Pool - wide net 2
-            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(200, 20, 20), // Pool - wide net 3
-            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(170, 10, 10), // Pool - wide net 4
-            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(150, 50, 50), // Pool - wide net 5
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(255, 0, 255), // Umbra purple
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(0, 255, 255), // Glacies blue
             (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(255, 0, 0), // Cruor red
-            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(255, 255, 255) // Fumus white
+            (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(255, 255, 255), // Fumus white
+            ...alt1_chatbox__WEBPACK_IMPORTED_MODULE_14__.defaultcolors.map(([r, g, b]) => (0,alt1_base__WEBPACK_IMPORTED_MODULE_15__.mixColor)(r, g, b)) // Library defaults for broader coverage
         ]
     };
     reader.diffReadUseTimestamps = false;

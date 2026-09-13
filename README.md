@@ -4,6 +4,15 @@ This is a fork of [Better AoD 2024](https://github.com/Jhaego/Better-AoD-2024) b
 
 Compared to the original, this version *should* properly track number of kills and average kill time, and now correctly detects and reads the in-game chatbox again as well as when the player re-enters the instance for a new kill.
 
+## Installation
+
+To install this plugin copy & paste this link into your browser:
+`alt1://addapp/https://cuddlyzebra.github.io/Better-AoD-2026/public/appconfig.json`
+
+If you do not already have Alt1 Toolkit installed you can [download it from runeapps.org](https://runeapps.org/alt1).
+
+Ensure the in-game Interface Scaling is set to 100%. Change text size to 12px or higher, to ensure minion order is captured correctly. 
+
 ## Update 13-09-2026: minion order fix, known pool detection issue
 
 Spent today tracking down a couple of long-standing bugs. Sharing the findings here in case anyone wants to pick up where I left off, or just wants to understand why pool detection doesn't work reliably.
@@ -23,11 +32,3 @@ Given Alt1 Toolkit is being phased out later this year in favour of the game's o
 
 The 2024 version was left unsupported as of November 2025, with the author noting he could no longer confirm it still worked. As of September 2026 it had indeed stopped detecting chat correctly, so this fork exists to get it working again. No mechanics-tracking features were changed — this is purely a maintenance fork to restore functionality.
 
-## Installation
-
-To install this plugin copy & paste this link into your browser:
-`alt1://addapp/https://cuddlyzebra.github.io/Better-AoD-2026/public/appconfig.json`
-
-If you do not already have Alt1 Toolkit installed you can [download it from runeapps.org](https://runeapps.org/alt1).
-
-Ensure the in-game Interface Scaling is set to 100%. 

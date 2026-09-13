@@ -30,4 +30,4 @@ To install this plugin copy & paste this link into your browser:
 
 If you do not already have Alt1 Toolkit installed you can [download it from runeapps.org](https://runeapps.org/alt1).
 
-Ensure the in-game Interface Scaling is set to 100%. Disable
+Ensure the in-game Interface Scaling is set to 100%. 

@@ -42409,7 +42409,7 @@ function App() {
                 (0,_helpers__WEBPACK_IMPORTED_MODULE_2__.displayDetectionMessage)("An error has occured", 600);
             }
         };
-        const tickInterval = setInterval(tick, 600);
+        const tickInterval = setInterval(tick, 200);
         return () => clearInterval(tickInterval);
     }, [settings, dispatch, dispatchLog]);
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {

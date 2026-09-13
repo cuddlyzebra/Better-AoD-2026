@@ -305,7 +305,7 @@ function App() {
             }
         }
 
-        const tickInterval = setInterval(tick, 600)
+        const tickInterval = setInterval(tick, 200)
 
         return () => clearInterval(tickInterval)
     }, [settings, dispatch, dispatchLog])
